@@ -18,7 +18,7 @@ MY_AzureResourceGroupName="[name of the azure resource group containing your DNS
 MY_AzureDnsApiBaseUrl="https://management.azure.com"
 MY_AzureTokenUrl="https://login.microsoftonline.com/$MY_AzureTenantId/oauth2/v2.0/token"
 MY_AzureDnsZoneName="[your zone name, e.g. example.com]"
-MY_AzureScope="https://management.microsoft.com/.default"
+MY_AzureScope="https://management.azure.com/.default"
 
 #Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 dns_myapi_add() {
