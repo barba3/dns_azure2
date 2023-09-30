@@ -48,7 +48,6 @@ dns_myapi_add() {
 
         _info "Adding record"
         if _invoke_rest PUT "$MY_AzureDnsApiBaseUrl/subscriptions/$MY_AzureSubscriptionId/resourceGroups/$MY_AzureResourceGroupName/providers/Microsoft.Network/dnsZones/$MY_AzureDnsZoneName/TXT/$_sub_domain?api-version=2018-05-01" "{ \"properties\": { \"TTL\": 3600, \"TXTRecords\": [ { \"value\": [ \"$txtvalue\" ] } ] } }" "$_access_token"; then
-
                 _debug response $response
                 if _contains "$response" "$txtvalue"; then
                         _info "Added, OK"
