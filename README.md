@@ -11,4 +11,4 @@ What do we need
 * Move configuration away from the source code file.
 * Consider a mechanism to rotate credentials.
 * Consider a better authentication method than app secret.
-* 
+* User-friendly instructions for Azure DNS, app registration, and which values to copy-paste from Azure portal to script config variables.
