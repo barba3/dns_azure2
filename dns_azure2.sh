@@ -12,7 +12,7 @@
 
 MY_Token="[bearer token]"
 
-MY_AzureSubscriptionId="[azure subscription ID"
+MY_AzureSubscriptionId="[azure subscription ID]"
 MY_AzureResourceGroupName="[name of the azure resource group containing your DNS zone]"
 MY_AzureDnsApiBaseUrl="https://management.azure.com"
 MY_AzureDnsZoneName="[your zone name, e.g. example.com]"
