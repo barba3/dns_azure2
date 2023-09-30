@@ -4,7 +4,7 @@
 #This file name is "dns_azure2.sh"
 #
 #Author: Bruno Venturi
-#Report Bugs here: https://github.com/acmesh-official/acme.sh
+#Report Bugs here: https://github.com/barba3/dns_azure2/issues
 #
 ########  Public functions #####################
 
