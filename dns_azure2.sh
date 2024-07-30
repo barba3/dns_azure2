@@ -20,11 +20,11 @@ MY_AzureTokenUrl="https://login.microsoftonline.com/$MY_AzureTenantId/oauth2/v2.
 MY_AzureDnsZoneName="[your zone name, e.g. example.com]"
 MY_AzureScope="https://management.azure.com/.default"
 
-#Usage: dns_myapi_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
-dns_myapi_add() {
+#Usage: dns_azure2_add   _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
+dns_azure2_add() {
         fulldomain=$1
         txtvalue=$2
-        _info "Using myapi"
+        _info "Using azure2"
         _debug fulldomain "$fulldomain"
         _debug txtvalue "$txtvalue"
 
@@ -68,10 +68,10 @@ dns_myapi_add() {
 
 #Usage: fulldomain txtvalue
 #Remove the txt record after validation.
-dns_myapi_rm() {
+dns_azure2_rm() {
   fulldomain=$1
   txtvalue=$2
-  _info "Using myapi"
+  _info "Using azure2"
   _debug fulldomain "$fulldomain"
   _debug txtvalue "$txtvalue"
 }
